@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/two-sum/description/
 '''Brute Force Solution 
 In the brute force approach, we can iterate through each element in the nums list and for each element, 
 check if there exists another element in the list such that their sum equals the target. 
