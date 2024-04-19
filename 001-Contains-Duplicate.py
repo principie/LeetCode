@@ -1,3 +1,5 @@
+# Link: https://leetcode.com/problems/contains-duplicate/
+
 # Brute Force Approach:
 def containsDuplicate_brute_force(nums):
     n = len(nums)
