@@ -15,7 +15,7 @@ nums = [2,1,5,3]
 target = 4
 print(two_sum(nums,target))
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 '''
 Optimized Approach:
 To optimize the solution, we can use a dictionary to store the elements of the list along with their indices.
