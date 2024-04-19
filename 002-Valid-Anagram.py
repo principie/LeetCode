@@ -1,3 +1,5 @@
+# Link: https://leetcode.com/problems/valid-anagram/description/
+
 class Solution:
   def isAnagram(self, s: str, t: str) -> bool:
     if len(s) != len(t):
@@ -9,17 +11,17 @@ class Solution:
       countT[i] = 1 + countS.get(t[i], 0)
     for c in countS:
       if countS[c] != countT.get(c, 0):
-        return False
+        return False                                '''Time Complexity: O(n)
+                                                       Space Complexity: O(n)'''
       
-    return True
-  
+      return True
+------------------------------------------------------------------------------------------------------------------------------------------------------------  
+# Another approach
+return Counter(s) == Counter(t)         '''Time Complexity: O(n log n) due to sorting.
+or,                                        Space Complexity: O(n)'''
+return sorter(s) == sorted(t)
 
-''' Another solution
- return Counter(s) == Counter(t)
- or,
- sorter(s) == sorted(t)
- '''
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -40,12 +42,10 @@ class Solution:
 
         return True
 
-# Create an instance of the Solution class
 solution = Solution()
 
-# Define the input strings
 s = "anagram"
-t = "nagaram"
+t = "nagaram"                                           '''Time Complexity: O(n)
+                                                           Space Complexity: O(n)'''
 
-# Call the isAnagram method and print the result
 print(solution.isAnagram(s, t))
