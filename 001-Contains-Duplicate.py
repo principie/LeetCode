@@ -1,5 +1,5 @@
 # Link: https://leetcode.com/problems/contains-duplicate/
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 # Brute Force Approach:
 def containsDuplicate_brute_force(nums):
     n = len(nums)
@@ -15,7 +15,7 @@ def containsDuplicate_brute_force(nums):
 nums = [1, 2, 3, 1]
 print(containsDuplicate_brute_force(nums))    ''' The time complexity of this approach is O(n^2) because we have two nested loops, 
                                                   and the space complexity is O(1) since we don't use any additional space.'''
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 # 2nd Approach:
 def containsDuplicate_sorting(nums):
     nums.sort()
@@ -30,7 +30,7 @@ nums = [1, 2, 3, 1]
 print(containsDuplicate_sorting(nums))     '''Time Complexity: Sorting the list takes O(n log n) time complexity.
                                               Space Complexity: Sorting the list can be done in-place, so the space complexity is O(1) for the sorting.'''
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 # Optimized Approach:
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
