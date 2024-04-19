@@ -41,7 +41,7 @@ class Solution:
                 return True
             hashset.add(n)
         return False       '''The time complexity of the optimized approach is O(n), where n is the number of elements in the list nums,
-                                because we iterate through the list only once. The space complexity is also O(n) in the worst case'''
+                                because we iterate through the list only once. The space complexity is also O(n) in the worst case.'''
 
 
 
